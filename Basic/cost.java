@@ -7,8 +7,11 @@ public class cost {
         float pen = sc.nextFloat();
         float eraser = sc.nextFloat();
 
-        float sum = (pencil + pen + eraser) + 0.18f;
+        float sum = (pencil + pen + eraser);
         System.out.println(sum);
+
+        float newTotal = sum + (0.18f * sum);
+        System.out.println(newTotal);
 
         sc.close();
     }
