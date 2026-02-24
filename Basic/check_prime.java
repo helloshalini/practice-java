@@ -1,16 +1,16 @@
 public class check_prime {
-    public static void main(String[] args) {
-        int n = 10;
-        int div = 2;
 
-        while (div < n) {
-            if(n % div == 0) {
-                System.out.println("Not Prime number");
+    public static boolean prime(int n) {
+        for(int i = 2; i<=n-1; i++) {
+            if(n%i == 0) {
+                return false;
             }
-            else
-                div--;
-                System.out.println("Prime number");
         }
+        return true;
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(prime(10));
     }
 
 }
